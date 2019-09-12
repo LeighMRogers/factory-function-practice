@@ -62,22 +62,70 @@ console.table("Leigh's pets", BowWowKennels)
 // Polar Records works with Pop artists.
 
 // Create an array for each of these record labels.
-let recordLabels = [
-    "JumpStop Records",
-    "Chatten Records",
-    "Polar Records"
-]
+let jumpStop = []
+let chatten = []
+let polar = []
+
+console.log(jumpStop, chatten, polar);
 
 // Create a factory function for each possible genre (e.g. createBluegrassArtist()). 
-const createBluegrassArtist = (name, genre, age) => {
+const createBluegrassArtist = (name, age) => {
     return {
         name: name,
-        genre: genre,
+        genre: "Bluegrass",
         age: age
     }
 }
 
+console.log(createBluegrassArtist);
+
+const createRapArtist = (name, age) => {
+    return {
+        name: name,
+        genre: "Rap",
+        age: age
+    }
+}
+
+const createFunkArtist = (name, age) => {
+    return {
+        name: name,
+        genre: "Funk",
+        age: age
+    }
+}
+
+const createPopArtist = (name, age) => {
+    return {
+        name: name,
+        genre: "Pop",
+        age: age
+    }
+}
+
+const createCountryArtist = (name, age) => {
+    return {
+        name: name,
+        genre: "Country",
+        age: age
+    }
+}
+
+console.log(createCountryArtist.name.name);
+
+
 //Then invoke the appropriate function for each of the following artists and place the resulting object in the corresponding label array.
+
+const bruceCountry = createCountryArtist("Bruce Atikins", 23)
+const jensenPop = createPopArtist("Jensen Brown", 20)
+const dreFunk = createFunkArtist("Dre Funkz", 25)
+const dustaRap = createRapArtist("Dusta Grimes", 25)
+const bartBluegrass = createBluegrassArtist("Bartholemew Danielson", 23)
+const aviCountry = createCountryArtist("Avilee Dallas", 19)
+const austinPop = createPopArtist("Austin Kinkaid", 22)
+const loyonceRap = createRapArtist("Loyonce Branis", 27)
+
+console.log(bruceCountry)
 
 // Bruce Atikins is a Country artist and is 23 years old
 // Jensen Brown is a Pop artist and is 20 years old
